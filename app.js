@@ -9,7 +9,7 @@ const cors = require("koa2-cors") //跨域
 app.use(cors({ origin: "*" }))
 
 const app = new Koa()
-app.use(bodyparser({
+app.use(bodyParser({
   enableTypes: ['json', 'form', 'text']
 }))
 
